@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>ASCII Generator</h1>
+        <p>Enter your text below to generate ASCII art.</p>
+        <textarea id="input" oninput="generate()"></textarea>
+        <br>
+        <label for="padding">Padding:</label>
+        <input type="range" id="padding" min="0" max="20" value="0" oninput="generate()">
+        <br>
+        <label for="verticalPadding">Vertical Padding:</label>
+        <input type="range" id="verticalPadding" min="0" max="20" value="0" oninput="generate()">
+        <br>
+        <button onclick="generate()">Generate</button>
+        <br>
+        <pre id="output"></pre>
+    </div>
+</body>
+</html>
