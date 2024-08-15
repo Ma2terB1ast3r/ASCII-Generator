@@ -19,7 +19,10 @@
         <label for="verticalPadding">Vertical Padding:</label>
         <input type="range" id="verticalPadding" min="0" max="20" value="0" oninput="generate()">
         <br>
-        <button onclick="generate()">Generate</button>
+        <div class="button-container">
+            <button onclick="generate()">Generate</button>
+            <button onclick="copyText()">Copy</button>
+        </div>
         <br>
         <pre id="output"></pre>
     </div>

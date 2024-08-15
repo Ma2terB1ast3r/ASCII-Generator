@@ -43,3 +43,13 @@ function generate() {
 
     document.getElementById('output').innerText = output;
 }
+
+function copyText() {
+    const output = document.getElementById('output');
+    const range = document.createRange();
+    range.selectNode(output);
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
+}

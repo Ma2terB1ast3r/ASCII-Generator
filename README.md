@@ -20,6 +20,7 @@ A simple ASCII generator for titles or banners with a border.
 - Adjustable padding
 - Centered text
 - Multi-line text support
+- Copy output to clipboard
 
 ## Possible Future Plans
 
