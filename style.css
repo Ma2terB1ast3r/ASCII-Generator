@@ -1,35 +1,68 @@
+:root {
+    --primary-color: #101010;
+    --secondary-color: #1a1a1a;
+    --accent-color: #4CAF50;
+    --text-color: #fff;
+}
+
 body {
-    background-color: #101010;
+    background-color: var(--primary-color);
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1, p, label, button, input, textarea, pre {
+    color: var(--text-color);
+}
+
 h1 {
-    color: #fff;
     font-size: 2em;
     text-align: center;
 }
 
 p, label {
-    color: #fff;
     font-size: 1.2em;
 }
 
 textarea {
-    color: #fff;
     width: 80%;
     min-height: 200px;
     margin: 0;
     padding: 0;
-    background-color: #1a1a1a;
+    background-color: var(--secondary-color);
     resize: none;
 }
 
+pre {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    margin: 0;
+    width: 80%;
+    min-height: 200px;
+}
+
+input[type="range"] {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-color);
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 10px 0;
+}
+
 button {
-    background-color: #4CAF50;
+    background-color: var(--accent-color);
     border: none;
-    color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -44,32 +77,4 @@ button {
     justify-content: center;
     align-items: center;
     flex-direction: row;
-}
-
-input[type="range"] {
-    width: 80%;
-    margin: 0;
-    padding: 0;
-    background-color: #1a1a1a;
-    color: #fff;
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 10px 0;
-}
-
-pre {
-    color: #fff;
-    background-color: #1a1a1a;
-    padding: 10px;
-    margin: 0;
-    width: 80%;
-    min-height: 200px;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
 }
