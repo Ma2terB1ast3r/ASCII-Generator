@@ -27,3 +27,5 @@ A simple ASCII generator for titles or banners with a border.
 - Customizable border characters
 - Customizable border width
 - Customizable text alignment
+- Customizable corner characters
+- Different side and top border characters
